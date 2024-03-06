@@ -19,39 +19,6 @@ export function App(params) {
     setCustomers(getAll());
   }
 
-  // const handleInputChange = function (event) {
-  //   log("in handleInputChange()");
-  //   const name = event.target.name;
-  //   const value = event.target.value;
-  //   let newFormObject = {...formObject}
-  //   newFormObject[name] = value;
-  //   setFormObject(newFormObject);
-  // }
-
-  // let onCancelClick = function () {
-  //   log("in onCancelClick()");
-  //   setFormObject(blankCustomer);
-  // }
-
-  // let onDeleteClick = function () {
-  //   log("in onDeleteClick()");
-  //   if (formObject.id >=0) {
-  //     deleteById(formObject.id);
-  //   }
-  //   setFormObject(blankCustomer);
-  // }
-
-  // let onSaveClick = function () {
-  //   log("in onSaveClick()");
-  //   if (mode === "Add") {
-  //     post(formObject);
-  //   }
-  //   if (mode === "Update") {
-  //     put(formObject.id, formObject);
-  //   }
-  //   setFormObject(blankCustomer);
-  // }
-
   return (
     <div>
       <CustomerList customers={customers} blankCustomer = {blankCustomer} formObject={formObject} setFormObject={setFormObject} />
